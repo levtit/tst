@@ -55,3 +55,16 @@ python monitor_ui.py
 
 On Linux and macOS the built-in `curses` module is used automatically, but
 on Windows the `windows-curses` package must be installed separately.
+
+## Candlestick Window
+
+`candlestick_monitor.py` opens a small window displaying a live candlestick
+chart for the last 30 minutes of BTC/USDT data. The chart updates at a
+configurable interval (default 10 seconds).
+
+Run it with:
+
+```bash
+pip install -r requirements.txt
+python candlestick_monitor.py
+```
