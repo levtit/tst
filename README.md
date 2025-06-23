@@ -68,3 +68,14 @@ Run it with:
 pip install -r requirements.txt
 python candlestick_monitor.py
 ```
+
+## Live Candlestick Chart
+
+`live_candles.py` shows an incremental candlestick chart built from 1 minute BTC/USDT candles. Only new candles are fetched and appended to the chart at the given refresh interval.
+
+Run it with:
+
+```bash
+pip install -r requirements.txt
+python live_candles.py
+```
