@@ -48,5 +48,10 @@ Run it with:
 
 ```bash
 pip install -r requirements.txt
+# Windows users also need the optional curses package
+pip install windows-curses
 python monitor_ui.py
 ```
+
+On Linux and macOS the built-in `curses` module is used automatically, but
+on Windows the `windows-curses` package must be installed separately.

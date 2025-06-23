@@ -1,4 +1,12 @@
-import curses
+import os
+try:
+    import curses
+except ModuleNotFoundError as exc:
+    if os.name == "nt":
+        raise ModuleNotFoundError(
+            "curses is required. Install it with 'pip install windows-curses' on Windows"
+        ) from exc
+    raise
 import time
 
 from btc_price import fetch_coinbase
