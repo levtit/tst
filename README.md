@@ -39,3 +39,14 @@ Run it after installing the requirements:
 pip install -r requirements.txt
 python wyckoff_live.py
 ```
+
+## Interactive Monitor
+
+`monitor_ui.py` displays a simple text-based interface showing the current BTC price and whether the heuristic Wyckoff accumulation detector is triggered. It updates automatically every minute.
+
+Run it with:
+
+```bash
+pip install -r requirements.txt
+python monitor_ui.py
+```
