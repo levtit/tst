@@ -28,3 +28,14 @@ pip install -r requirements.txt
 python -m wyckoff.main train --limit 1000
 python -m wyckoff.main predict --model wyckoff.pkl --limit 50
 ```
+
+## Live Wyckoff Monitor
+
+`wyckoff_live.py` combines the price printer with a simple Wyckoff accumulation detector. It fetches fresh data from Binance, calculates several indicators and prints the current BTC price. When the heuristic conditions indicate a possible Wyckoff accumulation phase, a message is shown.
+
+Run it after installing the requirements:
+
+```bash
+pip install -r requirements.txt
+python wyckoff_live.py
+```
