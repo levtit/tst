@@ -1,12 +1,14 @@
-# Jeff Window Example
+# BTC Price Printer
 
-This repository contains a simple Tkinter script that opens a white window named Jeff. The window now shows the live BTC price and opens an additional window with a 15-minute candlestick chart. It still includes a text output field for displaying messages.
+This repository contains a small Python script that prints the current Bitcoin price every minute.
+The script queries the price from Coinbase and verifies it against Kraken. If the prices differ by
+more than 5%, a warning is shown.
 
 ## Usage
 
-Install the required dependencies and run the script with Python 3:
+Install the required dependency and run the script with Python 3:
 
 ```bash
-pip install matplotlib mplfinance pandas requests
-python white_surface.py
+pip install requests
+python btc_price.py
 ```
